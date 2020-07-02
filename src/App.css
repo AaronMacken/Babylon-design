@@ -15,13 +15,13 @@ body {
 }
 
 .dark {
-  background-color: #050505!important;
+  background-color: #1e1e1e!important;
 }
 
 .landing-hero {
   height: 100vh;
   min-height: 50rem;
-  background-image: url('./bg1.jpeg');
+  background-image: linear-gradient(90deg, rgba(30,30,30,1) 40%, rgba(30,30,30,0.18110994397759106) 100%),url('./bg1.jpeg');
   padding-top: 6rem;
   background-position: center;
   background-size: cover;
@@ -88,20 +88,20 @@ body {
   line-height: 1.5;
   border-radius: .3rem;
   color: #fff;
-  background-color: #8e44ad;
-  border: 1px solid #8e44ad;
+  background-color: #50129d;
+  border: 1px solid #50129d;
   transition: all .2s
 }
 
 .button:hover, .button:active {
-  background-color: #803d9c;
-  border-color: #803d9c;
-  outline: #8e44ad;
+  background-color: #6305d5;
+  border-color: #6305d5;
+  outline: #6305d5;
 }
 
 .button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem #8e44ad;
+  box-shadow: 0 0 0 0.2rem #6305d5;
 }
 
 
@@ -110,21 +110,22 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: .3rem;
-  color: #8e44ad;
+  color: #fff;
   font-weight: 600;
   background-color: transparent;
-  border: 1px solid #8e44ad;
+  border: 3px solid #50129d;
   transition: all .2s
 }
 
 .button-ghost:hover, .button-ghost:active {
-  background-color: #803d9c;
+  background-color: #6305d5;
+  border-color: #6305d5;
   color: #fff;
 }
 
 .button-ghost:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem #8e44ad;
+  box-shadow: 0 0 0 0.2rem #6305d5;
 }
 
 .landing-services {
@@ -141,6 +142,13 @@ body {
   }
   .hero-button-container {
     grid-area: 4 / 2 / 5 / 6; 
+  }
+}
+
+
+@media screen and (min-width: 1900px) {
+  .hero-heading h1 {
+    padding: 1rem;
   }
 }
 
@@ -161,7 +169,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 550px) { 
   .hero-heading { 
     grid-area: 1 / 1 / 3 / 7;
     margin-bottom: 2rem;
