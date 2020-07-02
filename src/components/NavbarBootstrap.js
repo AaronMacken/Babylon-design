@@ -66,7 +66,7 @@ class NavbarBootstrap extends Component {
         style={{ padding: "1rem 5%" }}
         fixed="top"
       >
-        <Navbar.Brand href="#home">Gang Shit Bitch</Navbar.Brand>
+        <Navbar.Brand href="#home">Babylon Tech.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-center">

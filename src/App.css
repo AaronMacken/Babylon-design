@@ -49,6 +49,9 @@ body {
 .hero-heading h1 {
   font-size: 5rem;
   color: white;
+  text-transform: uppercase;
+  font-family: serif;
+  letter-spacing: 2px;
 }
 
 
@@ -160,7 +163,8 @@ body {
 
 @media screen and (max-width: 500px) { 
   .hero-heading { 
-    grid-area: 1 / 1 / 2 / 7;
+    grid-area: 1 / 1 / 3 / 7;
+    margin-bottom: 2rem;
     padding: 1rem;
   }
   .hero-heading h1 {
@@ -168,6 +172,7 @@ body {
   }
   .hero-subheading { 
     grid-area: 2 / 1 / 4 / 7; 
+    padding: .5rem;
   }
   #hero-button-container .button {
     margin-bottom: 2rem;
@@ -182,6 +187,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero-heading h1 {
+    font-size: 2.25rem;
+  }
+  .hero-subheading p{
+    font-size: 1rem;
   }
 }
 
